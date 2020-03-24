@@ -10,6 +10,7 @@ from .ecospold1 import (
 )
 from .ecospold1_lcia import Ecospold1LCIAImporter
 from .ecospold2 import SingleOutputEcospold2Importer
+from .ecospold2_7zip import SingleOutputEcospold27zipImporter
 from .ecospold2_biosphere import Ecospold2BiosphereImporter
 from .excel import ExcelImporter, CSVImporter
 from .simapro_csv import SimaProCSVImporter

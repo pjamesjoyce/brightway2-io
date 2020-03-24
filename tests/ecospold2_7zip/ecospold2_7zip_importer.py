@@ -1,11 +1,11 @@
-from bw2io.extractors import Ecospold2Data7zipExtractor
+from bw2io import SingleOutputEcospold27zipImporter
+
 import os
 
 FIXTURES = os.path.join(os.path.dirname(__file__), "..", "fixtures", "ecospold2", "ecospold2.7z")
 
+def test_importer_7zip_extractor():
 
-def test_extraction():
-    data = Ecospold2Data7zipExtractor.extract(FIXTURES, "ei")
     expected = [{
         'activity': 'c40e3c0a-292f-45a5-88cd-ed18265cb7d7',
         'activity type': 'ordinary transforming activity',
@@ -92,4 +92,5 @@ def test_extraction():
         'type': 'process'
     }]
 
-    assert data == expected
+    imp = SingleOutputEcospold27zipImporter(FIXTURES, 'ei')
+    assert imp.data == expected

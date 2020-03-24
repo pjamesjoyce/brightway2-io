@@ -32,6 +32,7 @@ __all__ = [
     'SimaProLCIACSVImporter',
     'SingleOutputEcospold1Importer',
     'SingleOutputEcospold2Importer',
+    'SingleOutputEcospold27zipImporter',
     'unlinked_data',
     'UnlinkedData',
 ]
@@ -68,6 +69,7 @@ from .importers import (
     SimaProLCIACSVImporter,
     SingleOutputEcospold1Importer,
     SingleOutputEcospold2Importer,
+    SingleOutputEcospold27zipImporter,
 )
 from .units import normalize_units
 from .unlinked_data import unlinked_data, UnlinkedData
